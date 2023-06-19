@@ -19,7 +19,11 @@ class ListViewPagination extends Widget {
   factory ListViewPagination.custom(
       {required PageController controller,
       required int itemsPerPage,
-      required final List<Widget> widgetList}) {
+      required final List<Widget> widgetList,
+      final MainAxisAlignment? mainAxisAlignment,
+      final CrossAxisAlignment? crossAxisAlignment,
+      final double? height,
+      final double? width}) {
     return PagedListView(
       controller: controller,
       itemsPerPage: itemsPerPage,
